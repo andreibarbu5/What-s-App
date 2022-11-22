@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Chats from "./components/Chats";
+import Contacts from "./components/Contacts";
+import Navbar from "./components/Navbar";
+import Search from "./components/Search";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="h-full bg-[url('../src/assets/wow.jpg')] md:pt-10 md:pb-10 min-h-screen">
+      <div className="flex sm:max-w-[90vw] md:mx-auto   md:my-auto   rounded-[2rem] bg-white  ">
+        <div className="">
+          {/* Navbar */}
+          <Navbar />
+          {/* Search */}
+          <Search />
+          {/* Contacts */}
+          <Contacts />
+        </div>
+        {/* Chats */}
+        <Chats />
+      </div>
     </div>
   );
 }
